@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    color:#fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:0;
+    min-height: auto;
+    
+}
+
+
+.bg_section{
+    background-image: url('https://wallpaperaccess.com/full/900252.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    height:100%;
+    width: 100%;
+    position:relative;
+    min-height: 100vh;
+
+}
+.bg_section::after{
+    content:"";
+    background-color:#000;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    opacity:0.8;
+
+}
+.bg_section *{
+    position:relative;
+    z-index: 1;
+    align-items: center;
+}
+
+
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(100, 100, 100, 1);
+    width: 400px;
+    max-width: 100%;
+    color: black;
+    overflow: hidden;
+
+}
+
+.quiz-header {  
+    padding: 4rem;
+    text-align: justify;
+}
+
+
+h2 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+
+}
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(206, 44, 44);
+    border: none;
+    color: white;
+    display:block;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+
+}
+
+button:hover {
+    background-color: rgb(228, 19, 19);
+}
+
+button:focus {
+    background-color:  rgb(223, 63, 63);
+    outline:none;
+}
